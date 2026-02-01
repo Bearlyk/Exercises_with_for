@@ -11,8 +11,9 @@
             Numerosimpares();
             Multiplos_de_5();
             retro();
-          
-
+            acumulativa();
+            cuadrados();
+            potencias();
         }
 
         static void WriteFrom1To10()
@@ -57,6 +58,38 @@
         {
             for(int i = 10;i>=1;i--)
             {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("--------------------");
+        }
+        static void acumulativa()
+        {
+            int acumulador=1;
+            int salto=2;
+            int limite = 6;
+            for(int i = 0;i<=limite;i++)
+            {
+                acumulador = acumulador + salto;
+                Console.WriteLine(acumulador);
+                salto++;
+            }
+            Console.WriteLine("--------------------");
+        }
+        static void cuadrados()
+        {
+            for(int i=1;i<=6;i++)
+            {
+                 int cuadrado = i*i;
+                Console.WriteLine(cuadrado);
+            }
+            Console.WriteLine("--------------------");
+        }
+        static void potencias()
+        {
+            int hasta =128;
+            for(int i=1;i<=hasta;i*=1)
+            {
+                
                 Console.WriteLine(i);
             }
             Console.WriteLine("--------------------");
